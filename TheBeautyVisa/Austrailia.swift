@@ -1,23 +1,23 @@
 import SwiftUI
 
-struct Europe: View {
+struct Austrailia: View {
     
     var body: some View {
         
         VStack {
             
-            Text("Europe")
+            Text("Austrailia")
                 .font(.system(size: 30))
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.center)
-            Image("eu-c-03 (1)")
+            Image("aus")
                 .resizable()
                 .frame(width: 225, height: 175)
                 .padding()
                 
             
             HStack(spacing: 10) {
-                NavigationLink("Europe", destination: Europe())
+                NavigationLink("", destination: Austrailia())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -25,7 +25,7 @@ struct Europe: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: Europe())
+                NavigationLink("", destination: Austrailia())
                     .frame(width: 100, height: 50)
                    
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -33,7 +33,7 @@ struct Europe: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: Europe())
+                NavigationLink("", destination: Austrailia())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -44,7 +44,7 @@ struct Europe: View {
             .padding()
             
             HStack(spacing: 10) {
-                NavigationLink("", destination: Europe())
+                NavigationLink("", destination: Austrailia())
                     .frame(width: 100, height: 50)
                  
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -52,7 +52,7 @@ struct Europe: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: Europe())
+                NavigationLink("", destination: Austrailia())
                     .frame(width: 100, height: 50)
                 
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -69,6 +69,6 @@ struct Europe: View {
 }
 
 #Preview {
-    Europe()
+    Austrailia()
 }
 

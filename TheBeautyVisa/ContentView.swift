@@ -13,7 +13,7 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fit)
                         .clipShape(Circle())
                     
-                    Text("BEAUTY VISA")
+                    Text("BEAUTY VISA ✧")
                         .font(.title)
                         .fontWeight(.bold)
                         .padding(.bottom, 3.0)
@@ -35,32 +35,14 @@ struct ContentView: View {
                     
                     
                     HStack(spacing: 10) {
-                        NavigationLink("Asia", destination: SecondView())
+                        NavigationLink("Asia", destination: Asia())
                             .frame(width: 150, height: 20)
                             .padding()
                             .background(Color(red: 227/255, green: 167/255, blue: 5/255))
                             .foregroundColor(.white)
                             .cornerRadius(10)
                             .font(.headline)
-                        NavigationLink("Europe", destination: ThirdView())
-                            .frame(width: 150, height: 20)
-                            .padding()
-                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .font(.headline)
-                    }
-                    .padding()
-                    
-                    HStack(spacing: 10) {
-                        NavigationLink("North America", destination: SecondView())
-                            .frame(width: 150, height: 20)
-                            .padding()
-                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .font(.headline)
-                        NavigationLink("South America", destination: SecondView())
+                        NavigationLink("Europe", destination: Europe())
                             .frame(width: 150, height: 20)
                             .padding()
                             .background(Color(red: 227/255, green: 167/255, blue: 5/255))
@@ -71,14 +53,32 @@ struct ContentView: View {
                     .padding()
                     
                     HStack(spacing: 10) {
-                        NavigationLink("Africa", destination: SecondView())
+                        NavigationLink("North America", destination: NorthAmerica())
                             .frame(width: 150, height: 20)
                             .padding()
                             .background(Color(red: 227/255, green: 167/255, blue: 5/255))
                             .foregroundColor(.white)
                             .cornerRadius(10)
                             .font(.headline)
-                        NavigationLink("Australia", destination: SecondView())
+                        NavigationLink("South America", destination: SouthAmerica())
+                            .frame(width: 150, height: 20)
+                            .padding()
+                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .font(.headline)
+                    }
+                    .padding()
+                    
+                    HStack(spacing: 10) {
+                        NavigationLink("Africa", destination: Africa())
+                            .frame(width: 150, height: 20)
+                            .padding()
+                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .font(.headline)
+                        NavigationLink("Australia", destination: Austrailia())
                             .frame(width: 150, height: 20)
                             .padding()
                             .background(Color(red: 227/255, green: 167/255, blue: 5/255))
