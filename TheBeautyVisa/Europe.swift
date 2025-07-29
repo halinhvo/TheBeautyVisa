@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ThirdView: View {
+struct Europe: View {
     
     var body: some View {
         
@@ -17,7 +17,7 @@ struct ThirdView: View {
                 
             
             HStack(spacing: 10) {
-                NavigationLink("Europe", destination: SecondView())
+                NavigationLink("Europe", destination: ContentView())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -25,7 +25,7 @@ struct ThirdView: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: SecondView())
+                NavigationLink("", destination: ContentView())
                     .frame(width: 100, height: 50)
                    
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -33,7 +33,7 @@ struct ThirdView: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: SecondView())
+                NavigationLink("", destination: ContentView())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -44,7 +44,7 @@ struct ThirdView: View {
             .padding()
             
             HStack(spacing: 10) {
-                NavigationLink("", destination: SecondView())
+                NavigationLink("", destination: ContentView())
                     .frame(width: 100, height: 50)
                  
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -52,7 +52,7 @@ struct ThirdView: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: SecondView())
+                NavigationLink("", destination: ContentView())
                     .frame(width: 100, height: 50)
                 
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -69,6 +69,6 @@ struct ThirdView: View {
 }
 
 #Preview {
-    ThirdView()
+    Europe()
 }
 
