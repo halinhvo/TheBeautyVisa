@@ -23,28 +23,27 @@ struct ContentView: View {
                                                     
                 Divider()
                 
-                Text("Regions")
+                Text("Continents")
                     .font(.system(size: 30))
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
                     
                 
                 HStack(spacing: 20) {
-                    NavigationLink("Region 1", destination: SecondView())
-//                    NavigationLink("Region 2", destination: ThirdView())
-                    NavigationLink("Region 3", destination: SecondView())
+                    NavigationLink("Asia", destination: SecondView())
+                    NavigationLink("Europe", destination: SecondView())
+                    NavigationLink("Australia", destination: SecondView())
                 }
                 .padding()
                 
                 HStack(spacing: 20) {
-                    NavigationLink("Region 4", destination: SecondView())
-                    NavigationLink("Region 5", destination: SecondView())
-                    NavigationLink("Region 6", destination: SecondView())
+                    NavigationLink("North America", destination: SecondView())
+                    NavigationLink("South America", destination: SecondView())
+                    NavigationLink("Africa", destination: SecondView())
                 }
                 .padding()
                 
                 Spacer()
-                Text("change 1 (test)")
             }
         }
     }
