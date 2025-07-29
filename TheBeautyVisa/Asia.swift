@@ -1,19 +1,26 @@
 import SwiftUI
 
 struct SecondView: View {
+    
     var body: some View {
+        
         VStack {
+            
             Text("Asia")
                 .font(.system(size: 30))
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.center)
+            Image("asia")
+                .resizable()
+                .frame(width: 225, height: 175)
+                .padding()
                 
             
             HStack(spacing: 10) {
                 NavigationLink("East Asia", destination: SecondView())
                     .frame(width: 100, height: 50)
                     
-                    .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                    .background(Color(red: 228/255, green: 91/255, blue: 59/255))
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     .fontWeight(.bold)
@@ -21,7 +28,7 @@ struct SecondView: View {
                 NavigationLink("Southeast Asia", destination: SecondView())
                     .frame(width: 100, height: 50)
                    
-                    .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                    .background(Color(red: 228/255, green: 91/255, blue: 59/255))
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     .fontWeight(.bold)
@@ -29,7 +36,7 @@ struct SecondView: View {
                 NavigationLink("South Asia", destination: SecondView())
                     .frame(width: 100, height: 50)
                     
-                    .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                    .background(Color(red: 228/255, green: 91/255, blue: 59/255))
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     .fontWeight(.bold)
@@ -40,7 +47,7 @@ struct SecondView: View {
                 NavigationLink("Central Asia", destination: SecondView())
                     .frame(width: 100, height: 50)
                  
-                    .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                    .background(Color(red: 228/255, green: 91/255, blue: 59/255))
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     .fontWeight(.bold)
@@ -48,11 +55,13 @@ struct SecondView: View {
                 NavigationLink("Middle East Asia", destination: SecondView())
                     .frame(width: 100, height: 50)
                 
-                    .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                    .background(Color(red: 228/255, green: 91/255, blue: 59/255))
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     .fontWeight(.bold)
+                
             }
+            
         }
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
