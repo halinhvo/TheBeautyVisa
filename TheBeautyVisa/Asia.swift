@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SecondView: View {
+struct Asia: View {
     
     var body: some View {
         
@@ -17,7 +17,7 @@ struct SecondView: View {
                 
             
             HStack(spacing: 10) {
-                NavigationLink("East Asia", destination: SecondView())
+                NavigationLink("East Asia", destination: Asia())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -25,7 +25,7 @@ struct SecondView: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("Southeast Asia", destination: SecondView())
+                NavigationLink("Southeast Asia", destination: Asia())
                     .frame(width: 100, height: 50)
                    
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -33,7 +33,7 @@ struct SecondView: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("South Asia", destination: SecondView())
+                NavigationLink("South Asia", destination: Asia())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -44,7 +44,7 @@ struct SecondView: View {
             .padding()
             
             HStack(spacing: 10) {
-                NavigationLink("Central Asia", destination: SecondView())
+                NavigationLink("Central Asia", destination: Asia())
                     .frame(width: 100, height: 50)
                  
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -52,7 +52,7 @@ struct SecondView: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("Middle East Asia", destination: SecondView())
+                NavigationLink("Middle East Asia", destination: Asia())
                     .frame(width: 100, height: 50)
                 
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -69,6 +69,6 @@ struct SecondView: View {
 }
 
 #Preview {
-    SecondView()
+    Asia()
 }
 
