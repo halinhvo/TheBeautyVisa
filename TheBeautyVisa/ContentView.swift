@@ -16,12 +16,14 @@ struct ContentView: View {
                     Text("BEAUTY VISA")
                         .font(.title)
                         .fontWeight(.bold)
+                        .padding(.bottom, 3.0)
                     
                     Text("Beauty Visa delivers personalized skincare and makeup tips based on your location or travel plans, factoring in climate, local beauty culture, and ingredient access.")
                         .multilineTextAlignment(.center)
                     
                     Text("Choose a region below to start!")
                         .font(.headline)
+                        .padding(.vertical, 7.0)
                     
                     Divider()
                     
@@ -29,9 +31,10 @@ struct ContentView: View {
                         .font(.system(size: 30))
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
+                        .padding(.top, 5.0)
                     
                     
-                    HStack(spacing: 20) {
+                    HStack(spacing: 10) {
                         NavigationLink("Asia", destination: SecondView())
                             .frame(width: 150, height: 20)
                             .padding()
@@ -49,7 +52,7 @@ struct ContentView: View {
                     }
                     .padding()
                     
-                    HStack(spacing: 20) {
+                    HStack(spacing: 10) {
                         NavigationLink("North America", destination: SecondView())
                             .frame(width: 150, height: 20)
                             .padding()
@@ -67,7 +70,7 @@ struct ContentView: View {
                     }
                     .padding()
                     
-                    HStack(spacing: 20) {
+                    HStack(spacing: 10) {
                         NavigationLink("Africa", destination: SecondView())
                             .frame(width: 150, height: 20)
                             .padding()
