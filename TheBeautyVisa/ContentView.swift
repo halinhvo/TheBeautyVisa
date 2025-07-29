@@ -78,7 +78,7 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .cornerRadius(10)
                             .font(.headline)
-                        NavigationLink("Australia", destination: Austrailia())
+                        NavigationLink("Oceania", destination: Oceania())
                             .frame(width: 150, height: 20)
                             .padding()
                             .background(Color(red: 227/255, green: 167/255, blue: 5/255))

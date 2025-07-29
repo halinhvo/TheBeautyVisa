@@ -1,13 +1,13 @@
 import SwiftUI
 
-struct NorthernEurope: View {
+struct WEuro: View {
   var body: some View {
     VStack{
-      Text("Northern Europe")
+      Text("Western Europe")
         .font(.system(size: 30))
         .fontWeight(.semibold)
         .padding(.bottom, -15)
-      Image("northeneurope")
+      Image("westerneuro")
         .resizable()
         .frame(width: 300, height: 150)
         .clipShape(RoundedRectangle(cornerRadius: 25))
@@ -16,5 +16,5 @@ struct NorthernEurope: View {
   }
 }
 #Preview {
-  NorthernEurope()
+  WEuro()
 }

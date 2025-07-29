@@ -17,7 +17,7 @@ struct Europe: View {
                 
             
             HStack(spacing: 10) {
-                NavigationLink("Europe", destination: Europe())
+                NavigationLink("North Europe", destination: NEuro())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -25,15 +25,8 @@ struct Europe: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: Europe())
-                    .frame(width: 100, height: 50)
-                   
-                    .background(Color(red: 228/255, green: 91/255, blue: 59/255))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .fontWeight(.bold)
                 
-                NavigationLink("", destination: Europe())
+                NavigationLink("South Europe", destination: Europe())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -44,7 +37,7 @@ struct Europe: View {
             .padding()
             
             HStack(spacing: 10) {
-                NavigationLink("", destination: Europe())
+                NavigationLink("East Europe", destination: Europe())
                     .frame(width: 100, height: 50)
                  
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -52,13 +45,14 @@ struct Europe: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: Europe())
+                NavigationLink("West Europe", destination: Europe())
                     .frame(width: 100, height: 50)
-                
+                   
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     .fontWeight(.bold)
+                
                 
             }
             

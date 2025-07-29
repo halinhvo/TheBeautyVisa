@@ -17,7 +17,7 @@ struct Africa: View {
                 
             
             HStack(spacing: 10) {
-                NavigationLink("", destination: Africa())
+                NavigationLink("North Africa", destination: Africa())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -25,7 +25,7 @@ struct Africa: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: Africa())
+                NavigationLink("West Africa", destination: Africa())
                     .frame(width: 100, height: 50)
                    
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -33,7 +33,7 @@ struct Africa: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: Africa())
+                NavigationLink("Central Africa", destination: Africa())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -44,7 +44,7 @@ struct Africa: View {
             .padding()
             
             HStack(spacing: 10) {
-                NavigationLink("", destination: Africa())
+                NavigationLink("East Africa", destination: Africa())
                     .frame(width: 100, height: 50)
                  
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -52,7 +52,7 @@ struct Africa: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: Africa())
+                NavigationLink("South Africa", destination: Africa())
                     .frame(width: 100, height: 50)
                 
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))

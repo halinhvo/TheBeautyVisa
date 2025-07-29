@@ -17,7 +17,7 @@ struct SouthAmerica: View {
                 
             
             HStack(spacing: 10) {
-                NavigationLink("", destination: SouthAmerica())
+                NavigationLink("Andean States", destination: SouthAmerica())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -25,7 +25,7 @@ struct SouthAmerica: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: SouthAmerica())
+                NavigationLink("Southern Cone", destination: SouthAmerica())
                     .frame(width: 100, height: 50)
                    
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -33,18 +33,11 @@ struct SouthAmerica: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: SouthAmerica())
-                    .frame(width: 100, height: 50)
-                    
-                    .background(Color(red: 228/255, green: 91/255, blue: 59/255))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .fontWeight(.bold)
             }
             .padding()
             
             HStack(spacing: 10) {
-                NavigationLink("", destination: SouthAmerica())
+                NavigationLink("North SAM & Brazil", destination: SouthAmerica())
                     .frame(width: 100, height: 50)
                  
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -52,13 +45,6 @@ struct SouthAmerica: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: SouthAmerica())
-                    .frame(width: 100, height: 50)
-                
-                    .background(Color(red: 228/255, green: 91/255, blue: 59/255))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .fontWeight(.bold)
                 
             }
             
