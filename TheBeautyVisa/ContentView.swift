@@ -44,6 +44,7 @@ struct ContentView: View {
                 .padding()
                 
                 Spacer()
+                Text("change 1 (miley)")
             }
         }
     }
