@@ -7,9 +7,15 @@
 
 import SwiftUI
 
+
 struct SecondView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Northern Europe")
+            .font(.system(size: 30))
+            .fontWeight(.semibold)
+            .multilineTextAlignment(.center)
+        Image("northerneurope")
+        Text("")
     }
 }
 
