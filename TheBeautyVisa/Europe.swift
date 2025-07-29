@@ -17,26 +17,29 @@ struct Europe: View {
                 
             
             HStack(spacing: 10) {
+
                 NavigationLink("North Europe", destination: NEuro())
+
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     .fontWeight(.bold)
-                
-                
+                                
                 NavigationLink("South Europe", destination: Europe())
-                    .frame(width: 100, height: 50)
-                    
+                    .frame(width: 100, height: 50)                   
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     .fontWeight(.bold)
+                
+              
             }
             .padding()
             
             HStack(spacing: 10) {
+
                 NavigationLink("East Europe", destination: Europe())
                     .frame(width: 100, height: 50)
                  
@@ -47,7 +50,6 @@ struct Europe: View {
                 
                 NavigationLink("West Europe", destination: Europe())
                     .frame(width: 100, height: 50)
-                   
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
                     .foregroundColor(.white)
                     .cornerRadius(10)
