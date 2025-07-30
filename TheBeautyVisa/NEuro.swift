@@ -35,11 +35,12 @@ struct NEuro: View {
                                 .font(.headline)
                             
                             Group {
-                                Text("Maritime (Oceanic): Coastal UK, Ireland, Denmark, southern Scandinavia and Baltic states have mild, wet winters and cool summers with frequent year‑round precipitation, thanks to Atlantic currents.")
-                                Text("Continental/Subarctic: Inland Sweden, Finland and Baltic countries get warmer summers (~20–23 °C / 68–73 °F) and cold winters, while far‑north areas face long freezing winters and short cool summers; Iceland’s lowlands are subpolar oceanic, highlands are tundra.")
-                                Text("Rain & Snow: Rain peaks late summer to autumn; frequent coastal rain, often heavy in western Norway (up to 3,000–4,000 mm/yr); inland snow common from winter into spring.")
-                                Text("Summer (June–Aug): Coastal highs ~17–18 °C (63–64 °F); inland Sweden & Finland ~20–23 °C; Iceland cool ~10–15 °C.")
-                                Text("Winter (Dec–Feb): Coastal ~0 °C (32 °F); inland −5 to −10 °C (23–14 °F); far north ≤ −15 °C (5 °F); Iceland lowlands ~0 °C, highlands often −10 °C or lower.")
+                                Text("Maritime (Oceanic): Coastal UK, Ireland, Denmark, and parts of Norway/Sweden have mild winters and cool summers with consistent year‑round rain, owing to Atlantic currents.")
+                                Text("Continental: Inland Sweden, Finland, and the Baltic states bring warmer summers (≈ 20‑23 °C / 68‑73 °F) and cold winters with more seasonal variation.")
+                                Text("Subarctic / Tundra: Far-north Sweden, Finland, Norway and Iceland’s interior experience long freezing winters (≤ –15 °C / 5 °F), short cool summers; Iceland’s highlands classified as tundra.")
+                                Text("Frequent rain on coasts, especially west Norway (over 1,000 mm/year); inland/northern areas see prolonged snow cover lasting several months.")
+                                Text("Summer (Jun–Aug): Coastal highs ~17 °C (63 °F); inland up to ~22 °C; Iceland generally cooler at 10–16 °C.")
+                                Text("Winter (Dec–Feb): Coastal ~0 °C (32 °F); inland averages −5 to −10 °C (14–23 °F); far north ≤ –15 °C; Iceland lowlands ~0 °C, highlands ~–10 °C or colder.")
                             }
                             .font(.subheadline)
                         }
@@ -56,41 +57,56 @@ struct NEuro: View {
                 .padding()
                 Divider().padding(.vertical)
                 
-                VStack {
+                VStack(alignment: .leading, spacing: 16) {
                     Text("Fashion")
                         .font(.title2)
                         .fontWeight(.semibold)
-                        .padding()
-                    HStack {
-                        NavigationLink("Men", destination: NEuro())
-                            .frame(width: 150, height: 20)
-                            .padding()
-                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .font(.headline)
-                        NavigationLink("Women", destination: WEuro())
-                            .frame(width: 150, height: 20)
-                            .padding()
-                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .font(.headline)
-                    }
+                        .padding(.bottom, 5)
                     
-                    Text("Beauty/Skin/Hair")
+                    HStack(spacing: 20) {
+                        NavigationLink(destination: MensFashionSouthAsia()) {
+                            Text("Men's")
+                                .frame(width: 150, height: 20)
+                                .padding()
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .font(.headline)
+
+                        }
+                        
+                        NavigationLink(destination: WomensFashionSouthAsia()) {
+                            Text("Women's")
+                                .frame(width: 150, height: 20)
+                                .padding()
+                                .background(Color.pink)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .font(.headline)
+                        }
+                    }
+                }
+                .padding()
+                
+                // Beauty Section
+                VStack(alignment: .leading, spacing: 16) {
+                    Text("Beauty / Skin / Hair")
                         .font(.title2)
                         .fontWeight(.semibold)
-                        .padding()
-                    NavigationLink("Both", destination: WEuro())
-                        .frame(width: 150, height: 20)
-                        .padding()
-                        .background(Color(red: 227/255, green: 167/255, blue: 5/255))
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .font(.headline)
+                        .padding(.bottom, 5)
+                    
+                    NavigationLink(destination: BeautySouthAsia()) {
+                        Text("Both")
+                            .frame(width: 350, height: 20)
+                            .padding()
+                            .background(Color.purple)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .font(.headline)
+
+                    }
                 }
-                
+                .padding()
                 Spacer()
                 
             }
