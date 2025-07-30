@@ -49,6 +49,51 @@ struct SouthAsia: View {
             }
             .padding()
             Divider().padding(.vertical)
+            VStack(alignment: .leading, spacing: 16) {
+                Text("Fashion")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .padding(.bottom, 5)
+
+                HStack(spacing: 20) {
+                    NavigationLink(destination: MensFashionSouthAsia()) {
+                        Text("Men's")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+
+                    NavigationLink(destination: WomensFashionSouthAsia()) {
+                        Text("Women's")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.pink)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                }
+            }
+            .padding()
+
+            // Beauty Section
+            VStack(alignment: .leading, spacing: 16) {
+                Text("Beauty / Skin / Hair")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .padding(.bottom, 5)
+
+                NavigationLink(destination: BeautySouthAsia()) {
+                    Text("Both")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.purple)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+            }
+            .padding()
             Spacer()
         }
                 
