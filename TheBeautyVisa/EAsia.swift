@@ -1,5 +1,5 @@
 import SwiftUI
-struct EastAsia: View {
+struct EAsia: View {
   var body: some View {
     ScrollView {
       VStack {
@@ -46,5 +46,5 @@ struct EastAsia: View {
   }
 }
 #Preview {
-  EastAsia()
+  EAsia()
 }

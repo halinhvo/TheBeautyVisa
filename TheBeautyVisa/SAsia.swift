@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SouthAsia: View {
+struct SAsia: View {
     var body: some View {
         ScrollView {
             VStack {
@@ -56,7 +56,7 @@ struct SouthAsia: View {
                     .padding(.bottom, 5)
 
                 HStack(spacing: 20) {
-                    NavigationLink(destination: MensFashionSouthAsia()) {
+                    NavigationLink(destination: SAsiaMensFashion()) {
                         Text("Men's")
                             .frame(maxWidth: .infinity)
                             .padding()
@@ -65,7 +65,7 @@ struct SouthAsia: View {
                             .cornerRadius(10)
                     }
 
-                    NavigationLink(destination: WomensFashionSouthAsia()) {
+                    NavigationLink(destination: SEAsiaWomensFashion()) {
                         Text("Women's")
                             .frame(maxWidth: .infinity)
                             .padding()
@@ -102,5 +102,5 @@ struct SouthAsia: View {
 }
 
 #Preview {
-    SouthAsia()
+    SAsia()
 }

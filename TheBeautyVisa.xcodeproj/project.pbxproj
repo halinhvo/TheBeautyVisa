@@ -10,9 +10,33 @@
 		BDA14CC02E3915C5007855A8 /* TheBeautyVisa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBeautyVisa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BD2768A02E3A69AB001AE84A /* Exceptions for "TheBeautyVisa" folder in "TheBeautyVisa" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SAsiaWomensFashion,
+			);
+			target = BDA14CBF2E3915C5007855A8 /* TheBeautyVisa */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		BD2768A12E3A69AB001AE84A /* Exceptions for "TheBeautyVisa" folder in "Compile Sources" phase from "TheBeautyVisa" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = BDA14CBC2E3915C5007855A8 /* Sources */;
+			membershipExceptions = (
+				SAsiaWomensFashion,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BDA14CC22E3915C5007855A8 /* TheBeautyVisa */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BD2768A02E3A69AB001AE84A /* Exceptions for "TheBeautyVisa" folder in "TheBeautyVisa" target */,
+				BD2768A12E3A69AB001AE84A /* Exceptions for "TheBeautyVisa" folder in "Compile Sources" phase from "TheBeautyVisa" target */,
+			);
 			path = TheBeautyVisa;
 			sourceTree = "<group>";
 		};
