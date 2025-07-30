@@ -61,60 +61,90 @@ struct NEuro: View {
                     Text("Fashion")
                         .font(.title2)
                         .fontWeight(.semibold)
-                        .padding(.bottom, 5)
                     
-                    HStack(spacing: 20) {
-                        NavigationLink(destination: MensFashionSouthAsia()) {
-                            Text("Men's")
-                                .frame(width: 150, height: 20)
-                                .padding()
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                                .font(.headline)
-
-                        }
-                        
-                        NavigationLink(destination: WomensFashionSouthAsia()) {
-                            Text("Women's")
-                                .frame(width: 150, height: 20)
-                                .padding()
-                                .background(Color.pink)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                                .font(.headline)
-                        }
-                    }
-                }
-                .padding()
-                
-                // Beauty Section
-                VStack(alignment: .leading, spacing: 16) {
-                    Text("Beauty / Skin / Hair")
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                        .padding(.bottom, 5)
-                    
-                    NavigationLink(destination: BeautySouthAsia()) {
-                        Text("Both")
-                            .frame(width: 350, height: 20)
+                        .padding()
+                    HStack {
+                        NavigationLink("Men", destination: NEuro())
+                            .frame(width: 150, height: 20)
                             .padding()
-                            .background(Color.purple)
+                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
                             .foregroundColor(.white)
                             .cornerRadius(10)
                             .font(.headline)
-
+                        NavigationLink("Women", destination: NEuro())
+                            .frame(width: 150, height: 20)
+                        
+                            .padding(.bottom, 5)
+                        
+                        HStack(spacing: 20) {
+                            NavigationLink(destination: NEuro()) {
+                                Text("Men's")
+                                    .frame(width: 150, height: 20)
+                                    .padding()
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                                    .font(.headline)
+                                
+                            }
+                            
+                            NavigationLink(destination: NEuro()) {
+                                Text("Women's")
+                                    .frame(width: 150, height: 20)
+                                    .padding()
+                                    .background(Color.pink)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                                    .font(.headline)
+                            }
+                        }
                     }
+                    .padding()
+                    
+                    // Beauty Section
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text("Beauty / Skin / Hair")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .padding(.bottom, 5)
+                        
+                        NavigationLink(destination: BeautySouthAsia()) {
+                            Text("Both")
+                                .frame(width: 350, height: 20)
+                            
+                                .padding()
+                                .background(Color.purple)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .font(.headline)
+                            
+                        }
+                        
+                        
+                        Text("Beauty/Skin/Hair")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .padding()
+                        NavigationLink("Both", destination: NEuro())
+                            .frame(width: 150, height: 20)
+                            .padding()
+                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .font(.headline)
+                        
+                    }
+                    .padding()
+                    Spacer()
+                    
                 }
-                .padding()
-                Spacer()
-                
             }
         }
     }
-}
-
-#Preview {
-    NEuro()
-}
+    }
+    
+    #Preview {
+        NEuro()
+    }
+    
 

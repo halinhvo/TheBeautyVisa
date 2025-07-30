@@ -1,15 +1,15 @@
 import SwiftUI
 
-struct WEuro: View {
+struct EAsia: View {
     var body: some View {
         NavigationStack {
             ZStack(alignment: .bottom) {
                 ScrollView {
                     VStack {
-                        Text("Western Europe")
+                        Text("Eastern Asia")
                             .fontWeight(.bold)
                             .font(.title)
-                        Image("westerneuro")
+                        Image("asiabanner")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .scaleEffect(0.9)
@@ -25,17 +25,16 @@ struct WEuro: View {
                             VStack(alignment: .leading, spacing: 20) {
                                 Text("- Countries:")
                                     .font(.headline)
-                                Text("France 🇫🇷, Germany 🇩🇪, Netherlands 🇳🇱, Belgium 🇧🇪, Austria 🇦🇹, Switzerland 🇨🇭, Luxembourg 🇱🇺")
+                                Text("China 🇨🇳, Japan 🇯🇵, South Korea 🇰🇷, North Korea 🇰🇵, Taiwan 🇹🇼")
                                     .font(.subheadline)
                                 
                                 Text("- Climate Features:")
                                     .font(.headline)
                                 
                                 Group {
-                                    Text("Temperate: Four distinct seasons — cool winters, warm summers, mild spring and fall.")
-                                    Text("Rain: Frequent showers, especially in places like the Netherlands and Belgium. Always bring a cute trench or umbrella.")
-                                    Text("Summers: 70–85°F (21–29°C), popular for travel.")
-                                    Text("Winters: 30–45°F (–1 to 7°C), with some snowfall in places like Austria and Switzerland.")
+                                    Text("Temperate: Cold in the north, warm and humid in the south, dry in inland/high areas.")
+                                    Text("Temperatures can range from in the winter being -4°F to 59°F and in the summer being 77°F to 100°F.")
+                                    
                                 }
                                 .font(.subheadline)
                             }
@@ -57,7 +56,7 @@ struct WEuro: View {
                                 .padding()
                             
                             HStack {
-                                NavigationLink("Men", destination: WEuro())
+                                NavigationLink("Men", destination: EAsia())
                                     .frame(width: 150, height: 20)
                                     .padding()
                                     .background(Color(red: 227/255, green: 167/255, blue: 5/255))
@@ -65,7 +64,7 @@ struct WEuro: View {
                                     .cornerRadius(10)
                                     .font(.headline)
                                 
-                                NavigationLink("Women", destination: WEuro())
+                                NavigationLink("Women", destination: EAsia())
                                     .frame(width: 150, height: 20)
                                     .padding()
                                     .background(Color(red: 227/255, green: 167/255, blue: 5/255))
@@ -79,7 +78,7 @@ struct WEuro: View {
                                 .fontWeight(.semibold)
                                 .padding()
                             
-                            NavigationLink("Both", destination: WEuro())
+                            NavigationLink("Both", destination: EAsia())
                                 .frame(width: 150, height: 20)
                                 .padding()
                                 .background(Color(red: 227/255, green: 167/255, blue: 5/255))
@@ -94,7 +93,6 @@ struct WEuro: View {
                     .padding()
                 }
                 
-
                
                 HStack {
                     Spacer()
@@ -104,7 +102,7 @@ struct WEuro: View {
                     Spacer()
                     ToolbarButton(systemName: "bell", color: .gray)
                     Spacer()
-                    NavigationLink(destination: Europe()) {
+                    NavigationLink(destination: Asia()) {
                         ToolbarButton(systemName: "airplane", color: .gray)
                     }
                     Spacer()
@@ -113,64 +111,11 @@ struct WEuro: View {
                 }
                 .padding(.vertical, 10)
                 .background(Color.white.shadow(radius: 2))
-
-                VStack(alignment: .leading, spacing: 16) {
-                    Text("Fashion")
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                        .padding(.bottom, 5)
-                    
-                    HStack(spacing: 20) {
-                        NavigationLink(destination: WEuro()) {
-                            Text("Men's")
-                                .frame(width: 150, height: 20)
-                                .padding()
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                                .font(.headline)
-
-                        }
-                        
-                        NavigationLink(destination: WEuro()) {
-                            Text("Women's")
-                                .frame(width: 150, height: 20)
-                                .padding()
-                                .background(Color.pink)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                                .font(.headline)
-                        }
-                    }
-                }
-                .padding()
-                
-                // Beauty Section
-                VStack(alignment: .leading, spacing: 16) {
-                    Text("Beauty / Skin / Hair")
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                        .padding(.bottom, 5)
-                    
-                    NavigationLink(destination: BeautySouthAsia()) {
-                        Text("Both")
-                            .frame(width: 350, height: 20)
-                            .padding()
-                            .background(Color.purple)
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .font(.headline)
-
-                    }
-                }
-                .padding()
-                Spacer()
-            
             }
         }
     }
 }
 
 #Preview {
-    WEuro()
+    EAsia()
 }

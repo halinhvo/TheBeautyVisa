@@ -1,11 +1,8 @@
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         ZStack {
-//            Color(red: 228/255, green: 91/255, blue: 59/255)
-//                .ignoresSafeArea()
             NavigationStack {
                 VStack {
                     Image("BeautyVisaLogo")
@@ -51,7 +48,7 @@ struct ContentView: View {
                             .cornerRadius(10)
                             .font(.headline)
                     }
-                    .padding()
+                  //  .padding()
                     
                     HStack(spacing: 10) {
                         NavigationLink("North America", destination: NorthAmerica())
@@ -89,9 +86,9 @@ struct ContentView: View {
                             .cornerRadius(10)
                             .font(.headline)
                     }
-                   .frame(height: 100)
-                    .padding()
-                   .buttonStyle(ContinentButtonStyle())
+                //   .frame(height: 100)
+                    .padding(.bottom, 55.0)
+                //  .buttonStyle(ContinentButtonStyle())
                   
                 }
 
@@ -102,29 +99,9 @@ struct ContentView: View {
                     ToolbarButton(systemName: "bell", color: .gray)
                     Spacer()
 
-                    ZStack {
-                        Circle()
-                            .fill(
-                                LinearGradient(
-                                    colors: [
-                                        Color(red: 228/255, green: 91/255, blue: 59/255),
-                                        Color(red: 255/255, green: 183/255, blue: 166/255)
-                                    ],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                            )
 
-                            .frame(width: 60, height: 60)
-                            .shadow(radius: 4)
-                        Image(systemName: "plus")
-                            .foregroundColor(.white)
-                            .font(.system(size: 28, weight: .bold))
-                    }
-                    .offset(y: -20)
-
-                    Spacer()
-                    ToolbarButton(systemName: "airplane", color: .gray)
+                   
+                   ToolbarButton(systemName: "airplane", color: .gray)
                     Spacer()
                     ToolbarButton(systemName: "gear", color: .gray)
                     Spacer()
