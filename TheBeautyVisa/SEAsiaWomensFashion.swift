@@ -11,7 +11,16 @@ struct SEAsiaWomensFashion: View {
                         Text("Women's Fashion")
                             .fontWeight(.bold)
                             .font(.title)
-                        Image("")
+                        HStack{
+                            Image("sea1")
+                            Image("sea2")
+                            
+                           
+                        }
+                        HStack{
+                            Image("sea3")
+                            Image("sea4")
+                        }
                     }
                 }
             }
