@@ -3,10 +3,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            ZStack(alignment: .bottom) {
-                Color.white.ignoresSafeArea()
-
+        ZStack {
+//            Color(red: 228/255, green: 91/255, blue: 59/255)
+//                .ignoresSafeArea()
+            NavigationStack {
                 VStack {
                     Image("BeautyVisaLogo")
                         .resizable()
@@ -33,22 +33,61 @@ struct ContentView: View {
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
                         .padding(.top, 5.0)
+                    
+                    
+                    HStack(spacing: 10) {
+                        NavigationLink("Asia", destination: Asia())
+                            .frame(width: 150, height: 20)
+                            .padding()
+                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .font(.headline)
+                        NavigationLink("Europe", destination: Europe())
+                            .frame(width: 150, height: 20)
+                            .padding()
+                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .font(.headline)
+                    }
+                    .padding()
+                    
+                    HStack(spacing: 10) {
+                        NavigationLink("North America", destination: NorthAmerica())
+                            .frame(width: 150, height: 20)
+                            .padding()
+                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .font(.headline)
+                        NavigationLink("South America", destination: SouthAmerica())
+                            .frame(width: 150, height: 20)
+                            .padding()
+                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .font(.headline)
+                    }
+                    .padding()
+                    
+                    HStack(spacing: 10) {
+                        NavigationLink("Africa", destination: Africa())
+                            .frame(width: 150, height: 20)
+                            .padding()
+                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .font(.headline)
 
-                    VStack {
-                        HStack(spacing: 10) {
-                            NavigationLink("Asia", destination: Asia())
-                            NavigationLink("Europe", destination: Europe())
-                        }
+                        NavigationLink("Australia", destination: Australia())
 
-                        HStack(spacing: 10) {
-                            NavigationLink("North America", destination: NorthAmerica())
-                            NavigationLink("South America", destination: SouthAmerica())
-                        }
-
-                        HStack(spacing: 10) {
-                            NavigationLink("Africa", destination: Africa())
-                            NavigationLink("Oceania", destination: Oceania())
-                        }
+                            .frame(width: 150, height: 20)
+                            .padding()
+                            .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .font(.headline)
                     }
                    .frame(height: 100)
                     .padding()
