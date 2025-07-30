@@ -48,7 +48,7 @@ struct Europe: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("West Europe", destination: Europe())
+                NavigationLink("West Europe", destination: WEuro())
                     .frame(width: 100, height: 50)
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
                     .foregroundColor(.white)
