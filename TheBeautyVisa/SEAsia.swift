@@ -75,3 +75,8 @@ struct SEAsia: View {
         }
     }
 }
+
+#Preview {
+    SEAsia()
+}
+
