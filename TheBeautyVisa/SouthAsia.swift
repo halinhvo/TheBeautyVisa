@@ -9,7 +9,49 @@ import SwiftUI
 
 struct SouthAsia: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack {
+                Text("South Asia")
+                    .fontWeight(.bold)
+                    .font(.title)
+                Image("SouthAsia")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .scaleEffect(0.9)
+                    .padding(.bottom, 10)
+                    .shadow(radius: 3.0)
+                VStack {
+                    Text("Things to expect:")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .padding()
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text("- Countries:")
+                            .font(.headline)
+                        Text("India 🇮🇳, Pakistan 🇵🇰, Bangladesh 🇧🇩, Sri Lanka 🇱🇰, Nepal 🇳🇵, Bhutan 🇧🇹, Maldives 🇲🇻")
+                            .font(.subheadline)
+                        Text("- Climate Features:")
+                            .font(.headline)
+                        Group {
+                            Text("\n•Hot and humid most of the year, with monsoon seasons (June–Sept) and cooler winters (Dec–Feb, varies by region\n•Hot and humid most of the year, with monsoon seasons (June–Sept) and cooler winters (Dec–Feb, varies by region)\n•Dry seasons in parts of northern India, Pakistan, and Nepal.\n•High UV Index year-round — sunscreen is essential.")
+                        }
+                        .font(.subheadline)
+
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 12.0)
+                        .fill(Color(.secondarySystemBackground))
+                        .shadow(radius: 3.0)
+                )
+            }
+            .padding()
+            Divider().padding(.vertical)
+            Spacer()
+        }
+                
     }
 }
 
