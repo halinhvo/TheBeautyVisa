@@ -3,8 +3,6 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-//            Color(red: 228/255, green: 91/255, blue: 59/255)
-//                .ignoresSafeArea()
             NavigationStack {
                 VStack {
                     Image("BeautyVisaLogo")
