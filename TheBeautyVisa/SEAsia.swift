@@ -4,8 +4,6 @@ struct SEAsia: View {
     var body: some View {
         NavigationStack {
             ZStack(alignment: .bottom) {
-                Color(.systemBackground).ignoresSafeArea()
-                
                 ScrollView {
                     VStack {
                         Text("Southeast Asia")
@@ -33,6 +31,7 @@ struct SEAsia: View {
                                 
                                 Text("- Climate Features:")
                                     .font(.headline)
+                                
                                 Group {
                                     Text("Temperate: Two main seasons — hot, humid summers and wet, rainy monsoons.")
                                     Text("Rain: Frequent and heavy downpours during monsoon season. Pack a light raincoat.")
@@ -42,16 +41,58 @@ struct SEAsia: View {
                                 .font(.subheadline)
                             }
                         }
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .padding()
-                        .frame(maxWidth: 360)
                         .background(
                             RoundedRectangle(cornerRadius: 12.0)
                                 .fill(Color(.secondarySystemBackground))
                                 .shadow(radius: 3.0)
                         )
-                        .frame(maxWidth: .infinity)
+                        
+                        Divider().padding(.vertical)
+                        
+                        VStack {
+                            Text("Fashion")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .padding()
+                            
+                            HStack {
+                                NavigationLink("Men", destination: SEAsiaMensFashion())
+                                    .frame(width: 150, height: 20)
+                                    .padding()
+                                    .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                                    .font(.headline)
+                                
+                                NavigationLink("Women", destination: SEAsiaWomensFashion())
+                                    .frame(width: 150, height: 20)
+                                    .padding()
+                                    .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                                    .font(.headline)
+                            }
+                            
+                            Text("Beauty / Skin / Hair")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .padding()
+                            
+                            NavigationLink("Both", destination: SEAsiaBeauty())
+                                .frame(width: 150, height: 20)
+                                .padding()
+                                .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .font(.headline)
+                        }
+                        
+                        Spacer()
+                            .frame(height: 100)
                     }
-                    .padding(.bottom, 90)
+                    .padding()
                 }
                 
                 HStack {
@@ -79,4 +120,3 @@ struct SEAsia: View {
 #Preview {
     SEAsia()
 }
-

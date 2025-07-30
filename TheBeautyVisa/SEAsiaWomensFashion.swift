@@ -26,10 +26,11 @@ struct SEAsiaWomensFashion: View {
 
         ScrollView {
           VStack {
-            Text("Women's Fashion")
+            Text("Southeast Asia Women's Fashion")
               .font(.largeTitle)
               .fontWeight(.bold)
               .padding()
+              .multilineTextAlignment(.center)
 
             LazyVGrid(columns: columns, spacing: 20) {
               ForEach(fashionItems) { item in
