@@ -5,7 +5,7 @@
 // Created by Scholar on 7/30/25.
 //
 import SwiftUI
-struct SouthAsia: View {
+struct SAsia: View {
   var body: some View {
     NavigationStack{
       ScrollView {
@@ -78,7 +78,7 @@ struct SouthAsia: View {
             .font(.title2)
             .fontWeight(.semibold)
             .padding(.bottom, 5)
-          NavigationLink(destination: BeautySouthAsia()) {
+          NavigationLink(destination: SAsiaBeauty()) {
             Text("Both")
               .frame(maxWidth: .infinity)
               .padding()
@@ -94,5 +94,5 @@ struct SouthAsia: View {
   }
 }
 #Preview {
-  SouthAsia()
+  SAsia()
 }

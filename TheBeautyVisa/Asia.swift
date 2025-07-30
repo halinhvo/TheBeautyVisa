@@ -33,7 +33,7 @@ struct Asia: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("South Asia", destination: SouthAsia())
+                NavigationLink("South Asia", destination: SAsia())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
