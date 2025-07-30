@@ -16,7 +16,7 @@ struct ContentView: View {
                         .fontWeight(.bold)
                         .padding(.bottom, 3.0)
 
-                    Text("Beauty Visa delivers personalized skincare and makeup tips based on your location or travel plans, factoring in climate, local beauty culture, and ingredient access.")
+                    Text("Beauty Visa delivers personalized skincare and makeup tips based on your location or travel plans, factoring in climate, local beauty culture, and ingredient access")
                         .multilineTextAlignment(.center)
 
                     Text("Choose a region below to start!")
