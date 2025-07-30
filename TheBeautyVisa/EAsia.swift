@@ -73,7 +73,7 @@ struct EAsia: View {
                                     .font(.headline)
                             }
                             
-                            Text("Beauty/Skin/Hair")
+                            Text("Beauty / Skin / Hair")
                                 .font(.title2)
                                 .fontWeight(.semibold)
                                 .padding()
