@@ -80,7 +80,7 @@ struct ContentView: View {
                             .cornerRadius(10)
                             .font(.headline)
 
-                        NavigationLink("Australia", destination: Australia())
+                        NavigationLink("Oceania", destination: Oceania())
 
                             .frame(width: 150, height: 20)
                             .padding()
