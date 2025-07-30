@@ -7,7 +7,7 @@ struct NEuro: View {
         .font(.system(size: 30))
         .fontWeight(.semibold)
         .padding(.bottom, -15)
-      Image("northeneurope")
+      Image("northerneurope")
         .resizable()
         .frame(width: 300, height: 150)
         .clipShape(RoundedRectangle(cornerRadius: 25))
