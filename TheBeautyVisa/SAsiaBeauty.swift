@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct BeautySouthAsia: View {
+struct SAsiaBeauty: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    BeautySouthAsia()
+    SAsiaBeauty()
 }
