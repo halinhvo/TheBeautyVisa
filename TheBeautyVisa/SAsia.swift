@@ -5,6 +5,7 @@
 // Created by Scholar on 7/30/25.
 //
 import SwiftUI
+
 struct SAsia: View {
   var body: some View {
     NavigationStack{
@@ -78,6 +79,7 @@ struct SAsia: View {
             .font(.title2)
             .fontWeight(.semibold)
             .padding(.bottom, 5)
+
           NavigationLink(destination: SAsiaBeauty()) {
             Text("Both")
               .frame(maxWidth: .infinity)
