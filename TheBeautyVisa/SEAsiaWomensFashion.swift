@@ -11,6 +11,7 @@ struct SEAsiaWomensFashion: View {
                         Text("Women's Fashion")
                             .fontWeight(.bold)
                             .font(.title)
+                        Image("")
                     }
                 }
             }
