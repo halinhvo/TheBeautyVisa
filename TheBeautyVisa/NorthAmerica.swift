@@ -17,7 +17,7 @@ struct NorthAmerica: View {
                 
             
             VStack(spacing: 10) {
-                NavigationLink("Northern American", destination: NorthAmerica())
+                NavigationLink("North America", destination: NorthAmerica())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -25,7 +25,7 @@ struct NorthAmerica: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("Central American", destination: NorthAmerica())
+                NavigationLink("Central America", destination: NorthAmerica())
                     .frame(width: 100, height: 50)
                    
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))

@@ -1,10 +1,3 @@
-//
-//  WesternEurope.swift
-//  TheBeautyVisa
-//
-//  Created by Scholar on 7/29/25.
-//
-
 import SwiftUI
 
 struct NEuro: View {
