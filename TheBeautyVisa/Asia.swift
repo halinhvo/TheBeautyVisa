@@ -17,7 +17,7 @@ struct Asia: View {
                 
             
             HStack(spacing: 10) {
-                NavigationLink("East Asia", destination: Asia())
+                NavigationLink("East Asia", destination: EastAsia())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
