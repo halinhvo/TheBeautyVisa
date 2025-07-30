@@ -16,8 +16,8 @@ struct NorthAmerica: View {
                 .padding()
                 
             
-            HStack(spacing: 10) {
-                NavigationLink("", destination: NorthAmerica())
+            VStack(spacing: 10) {
+                NavigationLink("Northern American", destination: NorthAmerica())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -25,7 +25,7 @@ struct NorthAmerica: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: NorthAmerica())
+                NavigationLink("Central American", destination: NorthAmerica())
                     .frame(width: 100, height: 50)
                    
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -33,7 +33,7 @@ struct NorthAmerica: View {
                     .cornerRadius(10)
                     .fontWeight(.bold)
                 
-                NavigationLink("", destination: NorthAmerica())
+                NavigationLink("Carribean", destination: NorthAmerica())
                     .frame(width: 100, height: 50)
                     
                     .background(Color(red: 228/255, green: 91/255, blue: 59/255))
@@ -43,24 +43,9 @@ struct NorthAmerica: View {
             }
             .padding()
             
-            HStack(spacing: 10) {
-                NavigationLink("", destination: NorthAmerica())
-                    .frame(width: 100, height: 50)
-                 
-                    .background(Color(red: 228/255, green: 91/255, blue: 59/255))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .fontWeight(.bold)
+            
                 
-                NavigationLink("", destination: NorthAmerica())
-                    .frame(width: 100, height: 50)
-                
-                    .background(Color(red: 228/255, green: 91/255, blue: 59/255))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .fontWeight(.bold)
-                
-            }
+            
             
         }
         .navigationTitle("")

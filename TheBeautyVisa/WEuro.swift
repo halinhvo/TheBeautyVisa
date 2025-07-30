@@ -94,6 +94,7 @@ struct WEuro: View {
                     .padding()
                 }
                 
+
                
                 HStack {
                     Spacer()
@@ -112,6 +113,59 @@ struct WEuro: View {
                 }
                 .padding(.vertical, 10)
                 .background(Color.white.shadow(radius: 2))
+
+                VStack(alignment: .leading, spacing: 16) {
+                    Text("Fashion")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .padding(.bottom, 5)
+                    
+                    HStack(spacing: 20) {
+                        NavigationLink(destination: WEuro()) {
+                            Text("Men's")
+                                .frame(width: 150, height: 20)
+                                .padding()
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .font(.headline)
+
+                        }
+                        
+                        NavigationLink(destination: WEuro()) {
+                            Text("Women's")
+                                .frame(width: 150, height: 20)
+                                .padding()
+                                .background(Color.pink)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .font(.headline)
+                        }
+                    }
+                }
+                .padding()
+                
+                // Beauty Section
+                VStack(alignment: .leading, spacing: 16) {
+                    Text("Beauty / Skin / Hair")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .padding(.bottom, 5)
+                    
+                    NavigationLink(destination: BeautySouthAsia()) {
+                        Text("Both")
+                            .frame(width: 350, height: 20)
+                            .padding()
+                            .background(Color.purple)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .font(.headline)
+
+                    }
+                }
+                .padding()
+                Spacer()
+            
             }
         }
     }
