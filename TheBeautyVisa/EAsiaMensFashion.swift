@@ -8,7 +8,7 @@ struct EAsiaMensFashion: View {
  let fashionItems = [
   FashionItem(imageName: "snow", description: "In the winter men typically wear warm layers with scarves for extra warmth"),
   FashionItem(imageName: "hat", description: "A pair of sweatpants with a quarter zip up"),
-  FashionItem(imageName: "shorts", description: "Graphics tees and jean shorts"),
+  FashionItem(imageName: "shorts", description: "Graphics tees and jean shorts is commonly worn around the streets of Japan and South Korea."),
   FashionItem(imageName: "cap", description: "Caps are essential for sun protection")
  ]
  let columns = [
@@ -27,6 +27,7 @@ struct EAsiaMensFashion: View {
      }
     }
     .padding()
+       Text("Mens clothing in East Asia generally consists of modern/minimalistic. Neutral colors like navy, white, and black are commonly worn.")
    }
   }
  }
