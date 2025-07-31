@@ -73,7 +73,7 @@ struct SAsia: View {
           }
         }
         .padding()
-        // Beauty Section
+    
         VStack(alignment: .leading, spacing: 16) {
           Text("Beauty / Skin / Hair")
             .font(.title2)
