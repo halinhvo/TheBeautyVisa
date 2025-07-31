@@ -20,7 +20,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                         .frame(width: 380, height: 100)
 
-                    Text("Choose a region below to start!")
+                    Text("Choose a continent below to start!")
                         .font(.headline)
                         .padding(.vertical, 7.0)
 
