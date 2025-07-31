@@ -64,7 +64,7 @@ struct EAsia: View {
                                     .cornerRadius(10)
                                     .font(.headline)
                                 
-                                NavigationLink("Women", destination: EAsia())
+                                NavigationLink("Women", destination: EAsiaWomensFashion())
                                     .frame(width: 150, height: 20)
                                     .padding()
                                     .background(Color(red: 227/255, green: 167/255, blue: 5/255))
@@ -73,12 +73,12 @@ struct EAsia: View {
                                     .font(.headline)
                             }
                             
-                            Text("Beauty / Skin / Hair")
+                            Text("Beauty")
                                 .font(.title2)
                                 .fontWeight(.semibold)
                                 .padding()
                             
-                            NavigationLink("Both", destination: EAsia())
+                            NavigationLink("Go", destination: EAsiaBeauty())
                                 .frame(width: 150, height: 20)
                                 .padding()
                                 .background(Color(red: 227/255, green: 167/255, blue: 5/255))

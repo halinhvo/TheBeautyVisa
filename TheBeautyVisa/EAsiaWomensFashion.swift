@@ -1,5 +1,5 @@
 import SwiftUI
-struct FashionItem4: Identifiable{
+struct FashionItem5: Identifiable{
 let id = UUID()
 let imageName: String
 let description: String
@@ -28,16 +28,45 @@ var body: some View {
     }
    }
    .padding()
-      Text("Clothing overview: mostly casual minimalistic wear. During the summer wearing skirts and light fabrics and in the winter layer up your clothing")
+      Text("go to Women's Fashion? →")
+          .font(.headline)
+          .multilineTextAlignment(.center)
+          .frame(maxWidth: .infinity)
+          .padding(.vertical)
+      NavigationLink("take me there!", destination: EAsiaWomensFashion())
+          .frame(width: 150, height: 20)
+          .padding()
+          .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+          .foregroundColor(.white)
+          .cornerRadius(10)
+          .font(.headline)
+      Text("Clothing Overview: Mostly casual minimalistic wear. Wear skirts and light fabrics during the summer and in the winter layer up your clothing!")
           .font(.headline)
           .multilineTextAlignment(.center)
           .frame(maxWidth: .infinity)
           .padding(.vertical)
   }
  }
+    HStack {
+        Spacer()
+        NavigationLink(destination: ContentView()) {
+            ToolbarButton(systemName: "house", color: .gray)
+        }
+        Spacer()
+        ToolbarButton(systemName: "bell", color: .gray)
+        Spacer()
+        NavigationLink(destination: Asia()) {
+            ToolbarButton(systemName: "airplane", color: .gray)
+        }
+        Spacer()
+        ToolbarButton(systemName: "gear", color: .gray)
+        Spacer()
+    }
+    .padding(.vertical, 10)
+    .background(Color.white.shadow(radius: 2))
 }
 }
-struct FlipCardView4: View {
+struct FlipCardView5: View {
 let item: FashionItem
 @State private var flipped = false
 @State private var rotation = 0.0
