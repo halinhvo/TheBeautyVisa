@@ -37,12 +37,12 @@ struct SEAsiaMensFashion: View {
                         }
                         .padding()
 
-                        Text("go to Women's Fashion? →")
+                        Text("Go to Women's Fashion? →")
                             .font(.headline)
                             .multilineTextAlignment(.center)
                             .frame(maxWidth: .infinity)
                             .padding(.vertical)
-                        NavigationLink("take me there!", destination: SEAsiaWomensFashion())
+                        NavigationLink("Take me there!", destination: SEAsiaWomensFashion())
                             .frame(width: 150, height: 20)
                             .padding()
                             .background(Color(red: 227/255, green: 167/255, blue: 5/255))

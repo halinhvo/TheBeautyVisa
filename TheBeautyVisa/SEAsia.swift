@@ -61,7 +61,7 @@ struct SEAsia: View {
                                 NavigationLink("Men", destination: SEAsiaMensFashion())
                                     .frame(width: 150, height: 20)
                                     .padding()
-                                    .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                                    .background(Color(.blue))
                                     .foregroundColor(.white)
                                     .cornerRadius(10)
                                     .font(.headline)
@@ -69,7 +69,7 @@ struct SEAsia: View {
                                 NavigationLink("Women", destination: SEAsiaWomensFashion())
                                     .frame(width: 150, height: 20)
                                     .padding()
-                                    .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                                    .background(Color(.red))
                                     .foregroundColor(.white)
                                     .cornerRadius(10)
                                     .font(.headline)
@@ -80,10 +80,15 @@ struct SEAsia: View {
                                 .fontWeight(.semibold)
                                 .padding()
                             
+
                             NavigationLink("Go", destination: SEAsiaBeauty())
                                 .frame(width: 150, height: 20)
+
+                            NavigationLink("Both", destination: SEAsiaBeauty())
+                                .frame(width: 350, height: 20)
+
                                 .padding()
-                                .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                                .background(Color(.purple))
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
                                 .font(.headline)
