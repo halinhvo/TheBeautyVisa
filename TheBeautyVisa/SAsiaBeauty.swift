@@ -28,7 +28,7 @@ struct SAsiaBeauty: View {
     var body: some View {
       ScrollView{
         VStack{
-          Text("Beauty/Skin/Hair")
+          Text("South Asia Beauty")
             .font(.largeTitle)
             .fontWeight(.bold)
             .padding()
@@ -37,9 +37,43 @@ struct SAsiaBeauty: View {
             }
           }
           .padding()
+            Text("Go back to South Asia? →")
+                .font(.headline)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical)
+            NavigationLink("Take me there!", destination: SAsia())
+                .frame(width: 150, height: 20)
+                .padding()
+                .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                .font(.headline)
+
+            Spacer()
+                .frame(height: 100)
         }
+          
       }
+        HStack {
+            Spacer()
+            NavigationLink(destination: ContentView()) {
+                ToolbarButton(systemName: "house", color: .gray)
+            }
+            Spacer()
+            ToolbarButton(systemName: "bell", color: .gray)
+            Spacer()
+            NavigationLink(destination: Asia()) {
+                ToolbarButton(systemName: "airplane", color: .gray)
+            }
+            Spacer()
+            ToolbarButton(systemName: "gear", color: .gray)
+            Spacer()
+        }
+        .padding(.vertical, 10)
+        .background(Color.white.shadow(radius: 2))
     }
+    
   }
 struct SAsiaBeautyFlipCardView: View {
   let item: BeautyItem
