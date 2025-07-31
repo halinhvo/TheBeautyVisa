@@ -1,5 +1,5 @@
 import SwiftUI
-struct FashionItem4: Identifiable{
+struct EAsiaWomensFashionItem: Identifiable{
 let id = UUID()
 let imageName: String
 let description: String
@@ -37,7 +37,7 @@ var body: some View {
  }
 }
 }
-struct FlipCardView4: View {
+struct EAsiaWomensFashionFlipCardView: View {
 let item: FashionItem
 @State private var flipped = false
 @State private var rotation = 0.0
