@@ -73,7 +73,7 @@ struct WEuro: View {
 
                         }
                         
-                        NavigationLink(destination: WEuro()) {
+                        NavigationLink(destination: WEuroWomensFashion()) {
                             Text("Women's")
                                 .frame(width: 150, height: 20)
                                 .padding()
@@ -107,6 +107,21 @@ struct WEuro: View {
                 .padding()
                 Spacer()
                 
+                HStack {
+                    Spacer()
+                    NavigationLink(destination: ContentView()) {
+                        ToolbarButton(systemName: "house", color: .gray)
+                    }
+                    Spacer()
+                    ToolbarButton(systemName: "bell", color: .gray)
+                    Spacer()
+                    NavigationLink(destination: Europe()) {
+                        ToolbarButton(systemName: "airplane", color: .gray)
+                    }
+                    Spacer()
+                    ToolbarButton(systemName: "gear", color: .gray)
+                    Spacer()
+                }
             }
         }
     }
