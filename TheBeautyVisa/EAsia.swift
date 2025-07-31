@@ -73,11 +73,13 @@ struct EAsia: View {
                                     .font(.headline)
                             }
                             
-                            Text("Beauty / Skin / Hair")
+                            Text("Beauty")
                                 .font(.title2)
                                 .fontWeight(.semibold)
                                 .padding()
-                            
+               
+                            NavigationLink("Go", destination: EAsiaBeauty())
+                                .frame(width: 150, height: 20)
                             NavigationLink("Both", destination: EAsiaBeauty())
                                 .frame(width: 350, height: 20)
                                 .padding()

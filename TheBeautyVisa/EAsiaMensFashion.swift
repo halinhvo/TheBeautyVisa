@@ -41,7 +41,25 @@ struct EAsiaMensFashion: View {
            .cornerRadius(10)
            .font(.headline)
    }
+      
   }
+     HStack {
+         Spacer()
+         NavigationLink(destination: ContentView()) {
+             ToolbarButton(systemName: "house", color: .gray)
+         }
+         Spacer()
+         ToolbarButton(systemName: "bell", color: .gray)
+         Spacer()
+         NavigationLink(destination: Asia()) {
+             ToolbarButton(systemName: "airplane", color: .gray)
+         }
+         Spacer()
+         ToolbarButton(systemName: "gear", color: .gray)
+         Spacer()
+     }
+     .padding(.vertical, 10)
+     .background(Color.white.shadow(radius: 2))
  }
 }
 struct FlipCardView2: View {

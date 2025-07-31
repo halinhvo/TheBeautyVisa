@@ -75,13 +75,18 @@ struct SEAsia: View {
                                     .font(.headline)
                             }
                             
-                            Text("Beauty / Skin / Hair")
+                            Text("Beauty")
                                 .font(.title2)
                                 .fontWeight(.semibold)
                                 .padding()
                             
+
+                            NavigationLink("Go", destination: SEAsiaBeauty())
+                                .frame(width: 150, height: 20)
+
                             NavigationLink("Both", destination: SEAsiaBeauty())
                                 .frame(width: 350, height: 20)
+
                                 .padding()
                                 .background(Color(.purple))
                                 .foregroundColor(.white)
