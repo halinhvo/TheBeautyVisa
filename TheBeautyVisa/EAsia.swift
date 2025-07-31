@@ -56,7 +56,7 @@ struct EAsia: View {
                                 .padding()
                             
                             HStack {
-                                NavigationLink("Men", destination: EAsia())
+                                NavigationLink("Men", destination: EAsiaMensFashion())
                                     .frame(width: 150, height: 20)
                                     .padding()
                                     .background(Color(red: 227/255, green: 167/255, blue: 5/255))
