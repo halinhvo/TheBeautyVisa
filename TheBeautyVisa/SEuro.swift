@@ -1,21 +1,14 @@
-//
-//  WesternEurope.swift
-//  TheBeautyVisa
-//
-//  Created by Scholar on 7/29/25.
-//
-
 import SwiftUI
 
-struct WEuro: View {
+struct SEuro: View {
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack {
-                    Text("Western Europe")
+                    Text("Southern Europe")
                         .fontWeight(.bold)
                         .font(.title)
-                    Image("westerneuro")
+                    Image("southerneurope")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .scaleEffect(0.9)
@@ -29,16 +22,16 @@ struct WEuro: View {
                         VStack(alignment: .leading, spacing: 20) {
                             Text("- Countries:")
                                 .font(.headline)
-                            Text("France 🇫🇷, Germany 🇩🇪, Netherlands 🇳🇱, Belgium 🇧🇪, Austria 🇦🇹, Switzerland 🇨🇭, Luxembourg 🇱🇺")
+                            Text("Spain 🇪🇸, Portugal 🇵🇹 (southern), Italy 🇮🇹 (central & south), Greece 🇬🇷, Malta 🇲🇹, Cyprus 🇨🇾, coastal Croatia 🇭🇷, Montenegro 🇲🇪, Albania 🇦🇱, coastal Slovenia 🇸🇮, Andorra 🇦🇩, San Marino 🇸🇲, Vatican City 🇻🇦")
                                 .font(.subheadline)
                             Text("- Climate Features:")
                                 .font(.headline)
                             
                             Group {
-                                Text("Temperate: Four distinct seasons — cool winters, warm summers, mild spring and fall.")
-                                Text("Rain: Frequent showers, especially in places like the Netherlands and Belgium. Always bring a cute trench or umbrella.")
-                                Text("Summers: 70–85°F (21–29°C), popular for travel.")
-                                Text("Winters: 30–45°F (–1 to 7°C), with some snowfall in places like Austria and Switzerland.")
+                                Text("Mediterranean climate: Hot, dry summers; mild, wet winters. Rain mostly from autumn through spring.")
+                                Text("SSummer: ~27–35 °C (81–95 °F), coastal humidity varies by region; Athens and Valencia often ~30 °C.")
+                                Text("Winters: ~5–15 °C (41–59 °F) at sea level; snow mainly in highlands/mountains like the Alps, Apennines, Troodos.")
+                                Text("Rainfall: Typically 250–600 mm/year; coastal and northern areas wetter, Andalusian interior & Almería semi‑arid (~150 mm/year).")
                             }
                             .font(.subheadline)
                         }
@@ -62,7 +55,7 @@ struct WEuro: View {
                         .padding(.bottom, 5)
                     
                     HStack(spacing: 20) {
-                        NavigationLink(destination: WEuroMensFashion()) {
+                        NavigationLink(destination: SEuro()) {
                             Text("Men's")
                                 .frame(width: 150, height: 20)
                                 .padding()
@@ -73,7 +66,7 @@ struct WEuro: View {
 
                         }
                         
-                        NavigationLink(destination: WEuro()) {
+                        NavigationLink(destination: SEuro()) {
                             Text("Women's")
                                 .frame(width: 150, height: 20)
                                 .padding()
@@ -113,5 +106,5 @@ struct WEuro: View {
 }
 
 #Preview {
-    WEuro()
+    SEuro()
 }
