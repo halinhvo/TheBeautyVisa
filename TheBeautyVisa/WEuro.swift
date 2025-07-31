@@ -62,7 +62,7 @@ struct WEuro: View {
                         .padding(.bottom, 5)
                     
                     HStack(spacing: 20) {
-                        NavigationLink(destination: WEuro()) {
+                        NavigationLink(destination: WEuroMensFashion()) {
                             Text("Men's")
                                 .frame(width: 150, height: 20)
                                 .padding()
