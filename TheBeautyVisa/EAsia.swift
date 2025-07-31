@@ -79,8 +79,6 @@ struct EAsia: View {
                                 .padding()
                
                             NavigationLink("Go", destination: EAsiaBeauty())
-                                .frame(width: 150, height: 20)
-                            NavigationLink("Both", destination: EAsiaBeauty())
                                 .frame(width: 350, height: 20)
                                 .padding()
                                 .background(Color(.purple))
