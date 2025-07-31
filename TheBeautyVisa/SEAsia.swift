@@ -26,7 +26,7 @@ struct SEAsia: View {
                             VStack(alignment: .leading, spacing: 20) {
                                 Text("- Countries:")
                                     .font(.headline)
-                                Text("Thailand 🇹🇭, Vietnam 🇻🇳, Indonesia 🇮🇩, Malaysia 🇲🇾, Philippines 🇵🇭, Singapore 🇸🇬 ... + more!")
+                                Text("Thailand 🇹🇭, Vietnam 🇻🇳, Indonesia 🇮🇩, Malaysia 🇲🇾, Philippines 🇵🇭, Singapore 🇸🇬, Myanmar 🇲🇲, Cambodia 🇰🇭, Laos 🇱🇦, Brunei 🇧🇳, Timor-Leste 🇹🇱")
                                     .font(.subheadline)
                                 
                                 Text("- Climate Features:")

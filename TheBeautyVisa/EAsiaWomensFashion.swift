@@ -1,6 +1,5 @@
 import SwiftUI
 
-struct FashionItem5: Identifiable{
 struct EAsiaWomensFashionItem: Identifiable{
 
 let id = UUID()
@@ -31,6 +30,11 @@ var body: some View {
     }
    }
    .padding()
+      Text("Clothing Overview: Mostly casual minimalistic wear. Wear skirts and light fabrics during the summer and in the winter layer up your clothing!")
+          .font(.headline)
+          .multilineTextAlignment(.center)
+          .frame(maxWidth: .infinity)
+          .padding(.vertical)
       Text("go to Women's Fashion? →")
           .font(.headline)
           .multilineTextAlignment(.center)
@@ -43,11 +47,7 @@ var body: some View {
           .foregroundColor(.white)
           .cornerRadius(10)
           .font(.headline)
-      Text("Clothing Overview: Mostly casual minimalistic wear. Wear skirts and light fabrics during the summer and in the winter layer up your clothing!")
-          .font(.headline)
-          .multilineTextAlignment(.center)
-          .frame(maxWidth: .infinity)
-          .padding(.vertical)
+      
   }
  }
     HStack {
@@ -69,47 +69,47 @@ var body: some View {
     .background(Color.white.shadow(radius: 2))
 }
 }
-struct FlipCardView5: View {
 struct EAsiaWomensFashionFlipCardView: View {
-let item: FashionItem
-@State private var flipped = false
-@State private var rotation = 0.0
-var body: some View{
- ZStack{
-  if flipped {
-   RoundedRectangle(cornerRadius: 15)
-    .fill(Color.gray.opacity(0.2))
-    .frame(height: 200)
-    .overlay(
-     Text(item.description)
-      .padding()
-      .multilineTextAlignment(.center)
-      .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
-    )
-   .opacity(flipped ? 1 : 0)
-  } else {
-   Image(item.imageName)
-    .resizable()
-    .scaledToFill()
-    .frame(height: 200)
-    .clipped()
-    .cornerRadius(15)
-    .opacity(flipped ? 0 : 1)
-  }
- }
- .rotation3DEffect(.degrees(rotation), axis: (x: 0, y: 1, z: 0))
- .onTapGesture {
-  withAnimation(.easeInOut(duration: 0.6)){
-   rotation += 180
-   flipped.toggle()
-      
- }
-     
-  }
-    
+        let item: FashionItem
+        @State private var flipped = false
+        @State private var rotation = 0.0
+        var body: some View{
+            ZStack{
+                if flipped {
+                    RoundedRectangle(cornerRadius: 15)
+                        .fill(Color.gray.opacity(0.2))
+                        .frame(height: 200)
+                        .overlay(
+                            Text(item.description)
+                                .padding()
+                                .multilineTextAlignment(.center)
+                                .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                        )
+                        .opacity(flipped ? 1 : 0)
+                } else {
+                    Image(item.imageName)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(height: 200)
+                        .clipped()
+                        .cornerRadius(15)
+                        .opacity(flipped ? 0 : 1)
+                }
+            }
+            .rotation3DEffect(.degrees(rotation), axis: (x: 0, y: 1, z: 0))
+            .onTapGesture {
+                withAnimation(.easeInOut(duration: 0.6)){
+                    rotation += 180
+                    flipped.toggle()
+                    
+                }
+                
+            }
+        
+    }
  }
    
-}
+
 #Preview {
-EAsiaWomensFashion()
+    EAsiaWomensFashion()
 }
