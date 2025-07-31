@@ -33,6 +33,22 @@ struct SAsiaMensFashion: View {
           }
         }
         .padding()
+          
+          Text("Go to Women's Fashion? →")
+              .font(.headline)
+              .multilineTextAlignment(.center)
+              .frame(maxWidth: .infinity)
+              .padding(.vertical)
+          NavigationLink("Take me there!", destination: SAsiaWomensFashion())
+              .frame(width: 150, height: 20)
+              .padding()
+              .background(Color(red: 227/255, green: 167/255, blue: 5/255))
+              .foregroundColor(.white)
+              .cornerRadius(10)
+              .font(.headline)
+
+          Spacer()
+              .frame(height: 100)
       }
     }
   }
